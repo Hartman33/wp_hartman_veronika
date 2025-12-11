@@ -16,122 +16,156 @@
         }
 
         
-        .card {
-            background-color: #87CEEB;      
-            padding: 20px;                  
-            margin: 20px;                   
-            border: 2px solid #333333;      
-            border-radius: 6px;             
-            position: relative;             
-            display: inline-block;          
-            vertical-align: top;
-            min-width: 260px;
+        .card:nth-of-type(1) {
+
+            background-color: #87CEEB;
+            padding: 20px;
+            margin: 20px auto;
+            width: 400px;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
+        .card:nth-of-type(2) {
+
+            background-color: #eb87d5;
+            padding: 20px;
+            margin: 20px auto;
+            width: 400px;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .card:nth-of-type(3) {
+
+            background-color: #25b489cd;
+            padding: 20px;
+            margin: 20px auto;
+            width: 400px;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    
+
+
 
         .card h2 {
-            font-family: Arial, sans-serif; 
-            font-size: 24px;               
-            text-align: center;            
-            margin-top: 0;
+            text-align: center;
+            color: #333333;
+            margin: 0 0 15px 0;
+            font-size: 20px;
         }
 
-        .card p {
-            color: #333333;                
+       
+        .card p:nth-of-type(1) {
+            
+            color: #333333;
             font-family: Verdana, sans-serif;
-            font-size: 16px;               
+            font-size: 16px;
             margin: 5px 0;
+            padding: 8px;
+            border-radius: 4px;
         }
 
-        .card .info {                      
-            position: absolute;            
+        .card p:nth-of-type(2) {
+            
+            color: #333333;
+            font-family: Verdana, sans-serif;
+            font-size: 16px;
+            margin: 5px 0;
+            padding: 8px;
+            border-radius: 4px;
+        }
+
+        .card p:nth-of-type(3) {
+           
+            color: #333333;
+            font-family: Verdana, sans-serif;
+            font-size: 16px;
+            margin: 5px 0;
+            padding: 8px;
+            border-radius: 4px;
+        }
+
+        
+        .info {
+            position: absolute;
+            bottom: 10px;
             right: 10px;
-            bottom: 10px;                  
+            background: transparent !important;
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
         }
 
-        .card .info a {
-            color: #0000aa;
+        .info a {
+            color: #0066cc;
             text-decoration: none;
         }
 
-        .card .info a:hover {
+        .info a:hover {
             text-decoration: underline;
         }
 
+       
         .flag-wrapper {
-            margin: 40px 20px;
-        }
-
-        .sweden-flag {
+            width: 200px;
+            height: 120px;
+            margin: 40px auto;
             position: relative;
-            width: 360px;                  
-            height: 220px;                 
-            background-color: #006AA7;     
-            box-sizing: border-box;
+            background-color: #005293;  
         }
 
-        .sweden-flag .vertical-bar {
+        .flag-vertical {
             position: absolute;
-            background-color: #FECC00;     
-            width: 40px;
-            height: 100%;
-            left: 110px;                   
+            left: 60px;
             top: 0;
+            width: 30px;
+            height: 100%;
+            background-color: #ffcd00;  
         }
 
-        .sweden-flag .horizontal-bar {
+        .flag-horizontal {
             position: absolute;
-            background-color: #FECC00;     
-            height: 40px;
-            width: 100%;
-            top: 90px;                    
             left: 0;
+            top: 45px;
+            width: 100%;
+            height: 30px;
+            background-color: #ffcd00;  
         }
     </style>
 </head>
 <body>
 
-   
+    
     <div class="card">
         <h2>Informacije o gradu</h2>
         <p>Naziv grada: Zagreb</p>
         <p>Država: Hrvatska</p>
-        <p>Populacija: 1 milion</p>
-        <p class="info">
-            
-            <a href="https://hr.wikipedia.org/wiki/Zagreb" target="_blank">Dodatne informacije</a>
-        </p>
+        <p>Populacija: 688.000</p>
+        <p class="info"><a href="https://hr.wikipedia.org/wiki/Zagreb" target="_blank">Dodatne infromacije</a></p>
     </div>
 
-   
+    
     <div class="card">
         <h2>Informacije o gradu</h2>
         <p>Naziv grada: Split</p>
         <p>Država: Hrvatska</p>
-        <p>Populacija: 1 milion</p>
-        <p class="info">
-            
-            <a href="https://hr.wikipedia.org/wiki/Split" target="_blank">Dodatne informacije</a>
-        </p>
+        <p>Populacija: 160.000</p>
+        <p class="info"><a href="https://hr.wikipedia.org/wiki/Split" target="_blank">Dodatne informacije</a></p>
     </div>
 
     
     <div class="card">
         <h2>Informacije o gradu</h2>
-        <p>Naziv grada: Osijek</p>
+        <p>Naziv grada: Pula</p>
         <p>Država: Hrvatska</p>
-        <p>Populacija: 1 milion</p>
-        <p class="info">
-            
-            <a href="https://hr.wikipedia.org/wiki/Osijek" target="_blank">Dodatne informacije</a>
-        </p>
+        <p>Populacija: 52.411</p>
+        <p class="info".><a href="https://hr.wikipedia.org/wiki/Pula" target="_blank">Dodatne informacije</a></p>
     </div>
 
-    
+  
     <div class="flag-wrapper">
-        <div class="sweden-flag">
-            <div class="vertical-bar"></div>
-            <div class="horizontal-bar"></div>
-        </div>
+        <div class="flag-vertical"></div>
+        <div class="flag-horizontal"></div>
     </div>
 
 </body>
